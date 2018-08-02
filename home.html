@@ -74,7 +74,13 @@
     <!-- End Navbar -->
     <div class="wrapper">
         <div class="page-header page-header-small">
-            <div class="page-header-image" data-parallax="true" style="background-image: url('assets/banners/5.jpg');">
+            <div id="slideshow">
+                <div class="page-header-image" data-parallax="true" style="background-image: url('assets/banners/5.jpg');">
+                </div>
+                <div class="page-header-image" data-parallax="true" style="background-image: url('assets/banners/3.jpg');">
+                </div>
+                <div class="page-header-image" data-parallax="true" style="background-image: url('assets/banners/4.jpg');">
+                </div>
             </div>
             <div class="container">
                 <div class="content-center">
@@ -294,10 +300,29 @@
                 <h2 class="title">Our Solutions</h2>
                 <div class="row">
                     <div class="col-sm-6">
-                        <img class="img-fluid" src="assets/our-solution/8.jpg" />
+                        <div class="p-5" style="margin-top:5px">
+                            <h4 class="text-uppercase text_align-left">Scent Diffusion Systems</h4>
+                            <p>
+                                Our diverse range of fragrances and diffusion systems, provide the ultimate choice,
+                                flexibility and quality that will stimulate a positive sensory impact on your business.
+
+                                Our scent diffusion technology is simple with easy to use controls and ample supplies of
+                                fragrance oils, covering offices, hotels, shops, and other corporate facilities of any size.
+                                We work with the best scent technology companies and perfumeries in the world to produce
+                                exquisite fragrances that will set your business apart
+                            </p>
+                        </div>
                     </div>
                     <div class="col-sm-6">
-                        <div class="p-5" style="margin-top:100px">
+                        <img class="img-fluid" src="assets/img/6.jpg" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <img class="img-fluid" src="assets/img/odour.jpg" />
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="p-5" style="margin-top:10px">
                             <h4 class="text-uppercase text_align-left">Odour Management</h4>
                             <p>
                                 As an fully fledged aircare business we also deal with neutralising malodours from kitchen
@@ -309,7 +334,7 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-6">
-                        <div class="p-5" style="margin-top:70px">
+                        <div class="p-5" style="margin-top:10px">
                             <h4 class="text-uppercase text_align-left">Events</h4>
                             <p>
                                 As an fully fledged aircare business we also deal with neutralising malodours from kitchen
@@ -565,6 +590,7 @@
             autoplay: true,
         });
 
+
         $(".client-testimonials").slick({
             dots: true,
             vertical: false,
@@ -573,7 +599,24 @@
             speed: 300,
             autoplay: true,
         });
+
+
+        $("#slideshow > div:gt(0)").hide();
+
+        setInterval(function() {
+            $('#slideshow > div:first')
+                .fadeOut(2000)
+                .next()
+                .fadeIn(1000)
+                .end()
+                .appendTo('#slideshow');
+        },  5000);
+
+
     });
+
+
+
 </script>
 
 </html>
