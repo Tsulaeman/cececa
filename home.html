@@ -19,9 +19,10 @@
     <link href="assets/css/now-ui-kit.css?v=1.1.0" rel="stylesheet" />
     <!-- CSS Just for demo purpose, don't include it in your project -->
     <link href="assets/css/demo.css" rel="stylesheet" />
+    <link href="assets/css/style2.css" rel="stylesheet" />
 </head>
 
-<body class="landing-page sidebar-collapse">
+<body class="landing-page sidebar-collapse" id="page">
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-dark fixed-top navbar-transparent " color-on-scroll="400">
         <div class="container">
@@ -74,17 +75,29 @@
     <!-- End Navbar -->
     <div class="wrapper">
         <div class="page-header page-header-small">
-            <div id="slideshow">
-                <div class="page-header-image" data-parallax="true" style="background-image: url('assets/banners/5.jpg');">
-                </div>
-                <div class="page-header-image" data-parallax="true" style="background-image: url('assets/banners/3.jpg');">
-                </div>
-                <div class="page-header-image" data-parallax="true" style="background-image: url('assets/banners/4.jpg');">
-                </div>
-            </div>
+            <ul class="cb-slideshow">
+                <li class="page-header-image" data-parallax="true">
+                    <span>Image 01</span><div><h3>Enrich The Ambience of <br/>YOUR HOME</h3></div>
+                </li>
+                <li class="" data-parallax="true">
+                    <span>Image 02</span><div><h3>Power of <br/>SCENT</h3></div>
+                </li>
+                <li class="" data-parallax="true">
+                    <span>Image 03</span><div><h3>Illuminate your <br/> SENSES</h3></div>
+                </li>
+                <li class="" data-parallax="true">
+                    <span>Image 04</span><div><h3>Create Unforgettable <br/> MEMORIES</h3></div>
+                </li>
+                <li class="" data-parallax="true">
+                    <span>Image 05</span><div><h3>Transform Your <br/> WORLD</h3></div>
+                </li>
+                <li class="" data-parallax="true">
+                    <span>Image 06</span><div><h3>Extend Your <br/> BRAND</h3></div>
+                </li>
+            </ul>
             <div class="container">
                 <div class="content-center">
-                    <h1 class="title">The Power of SCENT.</h1>
+                    <!--<h1 class="title">The Power of SCENT.</h1>-->
                     <div class="text-center">
                         <a href="#contact-us" class="btn btn-lg btn-light btn-round">
                             <i class="fa fa-envelope"></i> Request a Demo
@@ -647,16 +660,16 @@
         });
 
 
-        $("#slideshow > div:gt(0)").hide();
-
-        setInterval(function() {
-            $('#slideshow > div:first')
-                .fadeOut(2000)
-                .next()
-                .fadeIn(1000)
-                .end()
-                .appendTo('#slideshow');
-        },  5000);
+//        $("#slideshow > div:gt(0)").hide();
+//
+//        setInterval(function() {
+//            $('#slideshow > div:first')
+//                .fadeOut(2000)
+//                .next()
+//                .fadeIn(1000)
+//                .end()
+//                .appendTo('#slideshow');
+//        },  5000);
 
 
     });
