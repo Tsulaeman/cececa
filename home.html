@@ -99,7 +99,7 @@
                 <div class="content-center">
                     <!--<h1 class="title">The Power of SCENT.</h1>-->
                     <div class="text-center">
-                        <a href="#contact-us" class="btn btn-lg btn-light btn-round">
+                        <a href="#contact-us" class="btn btn-lg btn-light btn-round animate scroll-fancy">
                             <i class="fa fa-envelope"></i> Request a Demo
                         </a>
                     </div>
@@ -666,6 +666,13 @@
                     scrollTop: $(href).offset().top
                 }, 2000);
             });
+
+        $(".scroll-fancy").click(function (){
+            var href = $(this).attr("href");
+            $('html, body').animate({
+                scrollTop: $(href).offset().top
+            }, 2000);
+        });
 
 //        $("#slideshow > div:gt(0)").hide();
 //
