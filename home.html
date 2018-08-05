@@ -24,7 +24,7 @@
 
 <body class="landing-page sidebar-collapse" id="page">
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-dark fixed-top navbar-transparent " color-on-scroll="400">
+    <nav class="navbar navbar-expand-lg bg-dark fixed-top navbar-transparent" color-on-scroll="400">
         <div class="container">
             <div class="navbar-translate">
                 <a class="navbar-brand" href="" rel="tooltip" title="" data-placement="bottom" target="_blank">
@@ -39,7 +39,7 @@
             <div class="collapse navbar-collapse justify-content-end" id="navigation" data-nav-image="assets/img/blurred-image-1.jpg">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="/">Home</a>
+                        <a class="nav-link" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#about-us">About Us</a>
@@ -74,25 +74,25 @@
     </nav>
     <!-- End Navbar -->
     <div class="wrapper">
-        <div class="page-header page-header-small">
+        <div class="page-header page-header-small" id="home">
             <ul class="cb-slideshow">
                 <li class="page-header-image" data-parallax="true">
-                    <span>Image 01</span><div><h3>Enrich The Ambience of <br/>YOUR HOME</h3></div>
+                    <span>Image 01</span><div><h3><font class="small">Enrich The Ambience of</font> <br/>YOUR HOME</h3></div>
                 </li>
                 <li class="" data-parallax="true">
                     <span>Image 02</span><div><h3>Power of <br/>SCENT</h3></div>
                 </li>
                 <li class="" data-parallax="true">
-                    <span>Image 03</span><div><h3>Illuminate your <br/> SENSES</h3></div>
+                    <span>Image 03</span><div><h3><font class="small">Illuminate your</font> <br/> SENSES</h3></div>
                 </li>
                 <li class="" data-parallax="true">
-                    <span>Image 04</span><div><h3>Create Unforgettable <br/> MEMORIES</h3></div>
+                    <span>Image 04</span><div><h3><font class="small">Create Unforgettable</font><br/> MEMORIES</h3></div>
                 </li>
                 <li class="" data-parallax="true">
-                    <span>Image 05</span><div><h3>Transform Your <br/> WORLD</h3></div>
+                    <span>Image 05</span><div><h3><font class="small">Transform Your</font> <br/> WORLD</h3></div>
                 </li>
                 <li class="" data-parallax="true">
-                    <span>Image 06</span><div><h3>Extend Your <br/> BRAND</h3></div>
+                    <span>Image 06</span><div><h3><font class="small">Extend Your</font> <br/> BRAND</h3></div>
                 </li>
             </ul>
             <div class="container">
@@ -221,7 +221,7 @@
             <div class="container">
                 <!--<h2 class="title"></h2>-->
                 <div class="col-sm-6 ml-auto mr-auto text-center">
-                    <h5 class="description">
+                    <h5 class="description text-black">
                         Scent marketing is the ultimate way to increase brand differentiation
                         and improve your commercial environment
                     </h5>
@@ -347,7 +347,7 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-6">
-                        <div class="p-5" style="margin-top:10px">
+                        <div class="" style="margin-top:10px">
                             <h4 class="text-uppercase text_align-left">Events</h4>
                             <div class="events-carousel">
                                 <div>
@@ -461,19 +461,19 @@
                 </div>
                 <div class="row clients">
                     <div class="col-sm-4">
-                        <img class="img-fluid" src="assets/clients/Wheat%20Baker%20Logo.png" />
+                        <img class="img-fluid" src="assets/clients/Wheatbaker.jpg" />
                     </div>
                     <div class="col-sm-4">
-                        <img class="img-fluid" src="assets/clients/Deola%20Logo.png" />
+                        <img class="img-fluid" src="assets/clients/Deola.jpg" />
                     </div>
                     <div class="col-sm-4">
-                        <img class="img-fluid" src="assets/clients/Oando.png" />
+                        <img class="img-fluid" src="assets/clients/Oando.jpg" />
                     </div>
                     <div class="col-sm-4">
-                        <img class="img-fluid" src="assets/clients/Workstation%20Logo.png" />
+                        <img class="img-fluid" src="assets/clients/Workstation.jpg" />
                     </div>
                     <div class="col-sm-4">
-                        <img class="img-fluid" src="assets/clients/Shelf%20Drilling.png" />
+                        <img class="img-fluid" src="assets/clients/Shelf%20drilling.jpg" />
                     </div>
                 </div>
             </div>
@@ -656,10 +656,16 @@
             vertical: true,
             centerMode: false,
             infinite: false,
-            speed: 300,
+            speed: 1000,
             autoplay: true,
         });
 
+            $(".nav-link").click(function (){
+                var href = $(this).attr("href");
+                $('html, body').animate({
+                    scrollTop: $(href).offset().top
+                }, 2000);
+            });
 
 //        $("#slideshow > div:gt(0)").hide();
 //
