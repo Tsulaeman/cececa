@@ -3211,7 +3211,7 @@ p.description {
 .description,
 .card-description,
 .footer-big p {
-    color: #9A9A9A;
+    color: #060606;
     font-weight: 300;
 }
 
@@ -3616,7 +3616,8 @@ body {
 
 .navbar .navbar-nav .nav-link:not(.btn) {
     text-transform: uppercase;
-    font-size: 0.7142em;
+    font-size: 0.8042em;
+    font-weight: bold;
     padding: 0.5rem 0.7rem;
     line-height: 1.625rem;
 }

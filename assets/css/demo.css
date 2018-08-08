@@ -502,9 +502,7 @@ img.logo {
 }
 
 .section-testimonials{
-    background-image: url("../banners/1.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.79), rgba(0, 0, 0, 0.72)), rgba(0, 0, 0, 0.85) url(../banners/1.jpg) no-repeat center;
     background-size: cover;
 }
 
