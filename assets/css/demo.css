@@ -599,3 +599,7 @@ img.logo {
 body{
     overflow-x: hidden;
 }
+
+p.description.text_bold {
+    font-weight: 500;
+}
