@@ -45,10 +45,10 @@
     animation: titleAnimation 36s linear infinite 0s;
 }
 .cb-slideshow li div h3 {
-    font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
-    font-size: 140px;
-    padding: 0 30px;
-    line-height: 120px;
+    font-family: 'BebasNeueRegular', sans-serif;
+    font-size: 100px;
+    padding: 0 60px;
+    line-height: 80px;
     color: #FFF;
 }
 .cb-slideshow li:nth-child(1) span { background-image: url(../banners/6.jpg) }
