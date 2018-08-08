@@ -594,3 +594,7 @@ img.logo {
     background-repeat: no-repeat;
     background-size: cover !important;
 }
+
+body{
+    overflow-x: hidden;
+}
