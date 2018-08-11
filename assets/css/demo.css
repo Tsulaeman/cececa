@@ -603,3 +603,48 @@ body{
 p.description.text_bold {
     font-weight: 500;
 }
+
+@media only screen and (max-width: 600px) {
+    .section-contact-us{
+        height: auto !important;
+    }
+
+    .col-sm-12.address-block {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
+    .address-title{
+        text-align: center;
+    }
+
+    .contact-form {
+        margin-top: 30px;
+    }
+
+    .section-about-us {
+        height: auto !important;
+    }
+
+    .col-md-6.about-us-text {
+        background-color: #000000cf;
+    }
+
+    .section-team {
+        height: auto !important;
+    }
+
+    .section-scent-marketing {
+        height: auto !important;
+    }
+
+    .footer nav {
+        width: 100%;
+    }
+}
+
+.img-fluid.footer-img {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
