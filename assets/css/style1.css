@@ -46,8 +46,8 @@
     animation: titleAnimation 36s linear infinite 0s; 
 }
 .cb-slideshow li div h3 { 
-    font-family: 'BebasNeueRegular', 'Arial', "Comic Sans MS", sans-serif;
-    font-size: 80px;
+    font-family: 'Arabic Typesetting', 'Arial', "Comic Sans MS", sans-serif;
+    font-size: 100px;
     padding: 0;
     line-height: 80px;
 }
@@ -217,8 +217,8 @@
 }
 
 @media screen and (max-width: 1140px) { 
-    .cb-slideshow li div h3 { font-size: 80px }
+    .cb-slideshow li div h3 { font-size: 100px }
 }
 @media screen and (max-width: 600px) { 
-    .cb-slideshow li div h3 { font-size: 80px }
+    .cb-slideshow li div h3 { font-size: 100px }
 }

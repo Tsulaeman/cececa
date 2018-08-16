@@ -503,7 +503,7 @@ img.logo {
 }
 
 .section-testimonials{
-    background: linear-gradient(rgba(0, 0, 0, 0.79), rgba(0, 0, 0, 0.72)), rgba(0, 0, 0, 0.85) url(../banners/1.jpg) no-repeat center;
+    background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.3)), rgba(0, 0, 0, 0.58) no-repeat center;
     background-size: cover;
 }
 
@@ -574,9 +574,7 @@ img.logo {
     background-color: #000000d6;
     padding: 30px;
 }
-.address {
-    padding-left: 20px;
-}
+
 .col-sm-12.address-block {
     display: inline-flex;
     padding-top: 15px;
@@ -604,15 +602,11 @@ p.description.text_bold {
     font-weight: 500;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
     .section-contact-us{
         height: auto !important;
     }
 
-    .col-sm-12.address-block {
-        margin-left: 20%;
-        margin-right: 20%;
-    }
 
     .address-title{
         text-align: center;
@@ -647,4 +641,58 @@ p.description.text_bold {
     display: block;
     margin-right: auto;
     margin-left: auto;
+}
+
+video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat;
+    background-size: cover;
+    transition: 1s opacity;
+}
+.stopfade {
+    opacity: .5;
+}
+
+.col-sm-12.address-block > .address {
+    margin-right: auto;
+    /* margin-left: -5%; */
+}
+
+.col-sm-12.address-block > .icons-container {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.col-sm-12.address-block > .address {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.address > div {
+    display: inline-block;
+    padding-left: 20px;
+    padding-right:20px;
+}
+
+.col-sm-12.address-block > .address {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+p {
+    font-size: 1.47em;
+}
+
+.p-5 {
+    padding: 0.5rem!important;
 }
