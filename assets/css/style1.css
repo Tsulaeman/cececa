@@ -9,7 +9,7 @@
 }
 .cb-slideshow:after { 
     content: '';
-    background: transparent url(../banners/pattern.png) repeat top left;
+    background: linear-gradient(rgba(41, 41, 41, 0.55),rgba(37, 37, 37, 0.3),rgba(0, 0, 0, 0.62)) no-repeat center;
 }
 .cb-slideshow li span { 
     width: 100%;
